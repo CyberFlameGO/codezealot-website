@@ -1,0 +1,811 @@
+/* ====================================================== */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+@font-face {
+  font-family: 'crimson-regular';
+  src: url("../fonts/crimson/crimson-regular.woff") format("woff"), url("../fonts/crimson/crimson-regular.otf") format("opentype");
+  /* Compatibility */
+  font-style: normal; }
+@font-face {
+  font-family: 'crimson-italic';
+  src: url("../fonts/crimson/crimson-italic.woff") format("woff"), url("../fonts/crimson/crimson-italic.otf") format("opentype");
+  /* Compatibility */
+  font-style: italic; }
+@font-face {
+  font-family: 'crimson-bold';
+  src: url("../fonts/crimson/crimson-bold.woff") format("woff"), url("../fonts/crimson/crimson-bold.otf") format("opentype");
+  /* Compatibility */
+  font-style: bold; }
+@font-face {
+  font-family: 'UbuntuMono-Regular';
+  src: url("../fonts/UbuntuMono-Regular.woff") format("woff"), url("../fonts/UbuntuMono-Regular.otf") format("opentype");
+  /* Compatibility */
+  font-style: normal; }
+body {
+  font-size: 18px;
+  color: #eaeaea;
+  line-height: 1.3;
+  font-family: "UbuntuMono-Regular", Monaco, serif; }
+
+.source-code {
+  font-family: "UbuntuMono-Regular", Monaco;
+  color: white; }
+
+.comment {
+  color: #C6C6C6; }
+
+.copyright {
+  color: #C6C6C6; }
+
+.bash-user {
+  color: #24DE24; }
+
+.bash-prompt {
+  color: #2471DE; }
+
+p {
+  margin: 10px auto; }
+
+.italic {
+  font-style: italic; }
+
+.link {
+  color: #0bbff3;
+  text-decoration: none; }
+  .link:hover {
+    text-decoration: underline; }
+
+.section-title {
+  margin: 0 auto 50px;
+  color: #f57842;
+  font-size: 2.5em;
+  text-align: center; }
+  .section-title:before {
+    content: "> "; }
+
+header {
+  background-color: rgba(47, 72, 97, 0.7);
+  padding: 12px 0px 12px 0px;
+  width: 100%;
+  position: absolute;
+  top: 0px; }
+  header a.logo {
+    display: inline-block;
+    margin-left: 20px; }
+    header a.logo img {
+      width: 300px; }
+  header nav {
+    float: right; }
+    header nav ul {
+      list-style: none;
+      padding: 20px 20px 0px 0px;
+      margin: 0; }
+      header nav ul li {
+        display: inline-block;
+        margin-right: 20px; }
+        header nav ul li a {
+          color: #f57842;
+          text-decoration: none;
+          font-size: 1.5em; }
+          header nav ul li a:hover {
+            color: #fbcebb; }
+          header nav ul li a i {
+            margin-right: 10px; }
+      header nav ul span {
+        color: #f57842;
+        margin-right: 20px; }
+
+footer {
+  font-size: 1.3em;
+  background-color: #1c1c1c;
+  padding: 20px; }
+  footer small {
+    display: table;
+    margin: 40px auto 0px; }
+  footer ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0 auto;
+    display: table; }
+    footer ul li {
+      display: inline-block;
+      margin-right: 20px; }
+      footer ul li a {
+        color: #f57842;
+        text-decoration: none;
+        font-size: 0.8em; }
+        footer ul li a:hover {
+          color: #fbcebb; }
+        footer ul li a i {
+          padding-right: 8px; }
+
+.clear:after, .grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.grid-1 {
+  width: 100%; }
+
+.grid-2-3 {
+  width: 66%;
+  float: left; }
+
+.grid-1-2 {
+  width: 50%;
+  float: left; }
+
+.grid-1-3 {
+  width: 33%;
+  float: left; }
+
+.grid-1-4 {
+  width: 25%;
+  float: left; }
+
+.grid-3-4 {
+  width: 75%;
+  float: left; }
+
+.grid-1-6 {
+  width: 16.5%;
+  float: left; }
+
+.grid-4-5 {
+  width: 80%;
+  float: left; }
+
+.grid-1-5 {
+  width: 20%;
+  float: left; }
+
+body.page-home div.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero/laptop-3.jpg") no-repeat center -100px/100% auto;
+  min-height: 100vh; }
+  body.page-home div.hero div.text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px; }
+    body.page-home div.hero div.text h1, body.page-home div.hero div.text h2 {
+      color: white;
+      text-align: center; }
+    body.page-home div.hero div.text h1 {
+      font-size: 3em;
+      margin: 0px 0px 10px 0px; }
+    body.page-home div.hero div.text h2 {
+      font-size: 2em;
+      margin: 0; }
+body.page-home section#skill-set h2 {
+  text-align: center; }
+body.page-home section#skill-set div.skill-wrap {
+  max-width: 900px;
+  margin: 0 auto; }
+  body.page-home section#skill-set div.skill-wrap div.row {
+    margin: 40px 0px; }
+    body.page-home section#skill-set div.skill-wrap div.row div.skill i {
+      color: #eaeaea;
+      width: 50%;
+      padding: 40px;
+      font-size: 5em;
+      margin: 0px auto;
+      text-align: center;
+      border: 1px solid #2f4861;
+      background-color: #1c1c1c;
+      border-radius: 14px; }
+      body.page-home section#skill-set div.skill-wrap div.row div.skill i:hover {
+        background-color: #2f4861;
+        color: #f57842;
+        cursor: pointer;
+        border: 1px dashed #f57842; }
+      body.page-home section#skill-set div.skill-wrap div.row div.skill i span.exp {
+        display: none;
+        font-size: 0.5em;
+        font-weight: 400;
+        font-family: "UbuntuMono-Regular", Monospace; }
+    body.page-home section#skill-set div.skill-wrap div.row div.skill:hover i:before {
+      display: none; }
+    body.page-home section#skill-set div.skill-wrap div.row div.skill:hover i span.exp {
+      display: block; }
+body.page-home section#projects {
+  background-color: #131313; }
+  body.page-home section#projects div.projects-loop {
+    margin: 0 auto;
+    max-width: 1640px; }
+    body.page-home section#projects div.projects-loop div.each-project {
+      background-color: white;
+      border: 1px solid #979797; }
+      body.page-home section#projects div.projects-loop div.each-project div.top {
+        color: white;
+        background-color: #2f4861;
+        padding: 20px 20px;
+        margin-bottom: 20px; }
+        body.page-home section#projects div.projects-loop div.each-project div.top h1 {
+          margin: 0; }
+        body.page-home section#projects div.projects-loop div.each-project div.top p.project-tags {
+          margin: 0; }
+          body.page-home section#projects div.projects-loop div.each-project div.top p.project-tags a {
+            color: white; }
+      body.page-home section#projects div.projects-loop div.each-project div.left, body.page-home section#projects div.projects-loop div.each-project div.right {
+        background-color: transparent; }
+      body.page-home section#projects div.projects-loop div.each-project div.left {
+        margin: 20px 0px; }
+        body.page-home section#projects div.projects-loop div.each-project div.left img {
+          width: 280px;
+          height: auto;
+          display: block;
+          margin: 0px auto; }
+      body.page-home section#projects div.projects-loop div.each-project div.right h2 {
+        margin: 0; }
+      body.page-home section#projects div.projects-loop div.each-project div.right ul {
+        margin: 0px auto 20px; }
+      body.page-home section#projects div.projects-loop div.each-project div.button-wrapper {
+        padding: 20px 0px;
+        background-color: #3B3F3F;
+        font-family: UbuntuMono-Regular; }
+        body.page-home section#projects div.projects-loop div.each-project div.button-wrapper button {
+          width: 80%;
+          margin: 0px auto;
+          display: block;
+          font-size: 1.4em; }
+          body.page-home section#projects div.projects-loop div.each-project div.button-wrapper button a {
+            color: white; }
+            body.page-home section#projects div.projects-loop div.each-project div.button-wrapper button a:hover {
+              text-decoration: none; }
+body.page-home section#contact .source-code {
+  font-size: 1.3em; }
+body.page-home section#contact div.wpcf7 form {
+  font-size: 1.3em;
+  padding: 20px; }
+  body.page-home section#contact div.wpcf7 form div.grid {
+    margin-bottom: 20px; }
+  body.page-home section#contact div.wpcf7 form input, body.page-home section#contact div.wpcf7 form textarea {
+    background-color: #1c1c1c;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 4px 1px #121212;
+    display: block;
+    margin: 0 auto; }
+  body.page-home section#contact div.wpcf7 form input {
+    width: 93%; }
+  body.page-home section#contact div.wpcf7 form textarea {
+    width: 96.5%;
+    resize: none; }
+  body.page-home section#contact div.wpcf7 form span.first-name, body.page-home section#contact div.wpcf7 form span.last-name, body.page-home section#contact div.wpcf7 form span.phone, body.page-home section#contact div.wpcf7 form span.email {
+    width: 49%;
+    float: left;
+    margin-right: 14px; }
+  body.page-home section#contact div.wpcf7 form span.last-name, body.page-home section#contact div.wpcf7 form span.phone {
+    margin-right: 0px; }
+  body.page-home section#contact div.wpcf7 form span.message {
+    margin: 0px; }
+  body.page-home section#contact div.wpcf7 form span.ajax-loader {
+    display: none; }
+  body.page-home section#contact div.wpcf7 form input.wpcf7-submit {
+    background-color: #190513;
+    color: #f57842;
+    padding: 14px 80px 18px;
+    box-shadow: none;
+    width: 99%; }
+    body.page-home section#contact div.wpcf7 form input.wpcf7-submit:hover {
+      background-color: #15040f;
+      color: white; }
+
+body.page-minecraft div.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero/minecraft-hero.png") no-repeat center -100px/100% auto;
+  min-height: 100vh; }
+  body.page-minecraft div.hero div.text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    body.page-minecraft div.hero div.text h1, body.page-minecraft div.hero div.text h2 {
+      color: white;
+      text-align: center; }
+    body.page-minecraft div.hero div.text h1 {
+      font-size: 3em;
+      margin: 0px 0px 10px 0px; }
+    body.page-minecraft div.hero div.text h2 {
+      font-size: 2em;
+      margin: 0; }
+body.page-minecraft section#videos div.video-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  color: #f57842; }
+  body.page-minecraft section#videos div.video-wrapper div.epyt-gallery-list {
+    width: 80%;
+    margin: 60px auto; }
+body.page-minecraft section#discord div.discord-widget {
+  max-width: 1300px;
+  margin: 0 auto; }
+  body.page-minecraft section#discord div.discord-widget iframe {
+    width: 100%; }
+
+body.single-projects div.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero/laptop-5.jpg") no-repeat center -100px/100% auto;
+  min-height: 100vh; }
+  body.single-projects div.hero div.text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    body.single-projects div.hero div.text h1, body.single-projects div.hero div.text h2 {
+      color: white;
+      text-align: center; }
+    body.single-projects div.hero div.text h1 {
+      font-size: 3em;
+      margin: 0px 0px 10px 0px; }
+    body.single-projects div.hero div.text h2 {
+      font-size: 2em;
+      margin: 0; }
+  body.single-projects div.hero a.hero-button {
+    display: table;
+    margin: 30px auto 0px; }
+    body.single-projects div.hero a.hero-button button i {
+      display: block; }
+body.single-projects main section#project div.grid {
+  background-color: #1c1c1c;
+  width: 90%;
+  margin: 0 auto; }
+  body.single-projects main section#project div.grid div.top {
+    padding-top: 40px;
+    display: table;
+    margin: 0 auto 70px; }
+    body.single-projects main section#project div.grid div.top h1 {
+      margin: 0px 0px 10px; }
+    body.single-projects main section#project div.grid div.top ul {
+      display: table;
+      margin: 0 auto;
+      padding: 0; }
+      body.single-projects main section#project div.grid div.top ul li {
+        display: inline-block;
+        list-style: none; }
+        body.single-projects main section#project div.grid div.top ul li:after {
+          content: ", ";
+          white-space: pre; }
+        body.single-projects main section#project div.grid div.top ul li:last-of-type:after {
+          content: ""; }
+  body.single-projects main section#project div.grid div.left img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0px auto; }
+  body.single-projects main section#project div.grid div.right h2 {
+    margin: 0; }
+  body.single-projects main section#project div.grid div.right ul {
+    margin: 0px auto 20px; }
+body.single-projects main section#project div.button-wrapper {
+  padding: 100px 0px 60px;
+  font-family: UbuntuMono-Regular; }
+  body.single-projects main section#project div.button-wrapper button {
+    width: 80%;
+    margin: 0px auto;
+    display: block;
+    font-size: 1.4em; }
+    body.single-projects main section#project div.button-wrapper button a {
+      color: white; }
+      body.single-projects main section#project div.button-wrapper button a:hover {
+        text-decoration: none; }
+
+div#terminal {
+  max-width: 780px;
+  margin: 0px auto;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden; }
+  div#terminal div#terminal-upper {
+    background-color: #464646;
+    height: 16px;
+    padding: 7px 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
+    div#terminal div#terminal-upper div.terminal-button {
+      background-color: #333333;
+      border-radius: 100%;
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+      float: left; }
+      div#terminal div#terminal-upper div.terminal-button:first-of-type {
+        background-color: #E95420;
+        margin-left: 8px; }
+  div#terminal div#terminal-inner {
+    position: relative;
+    background-color: #300A24;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    min-height: 588px; }
+    div#terminal div#terminal-inner p.source-code:first-of-type {
+      margin-left: 20px; }
+    div#terminal div#terminal-inner .inline-block {
+      display: inline-block; }
+    div#terminal div#terminal-inner ul.source-code {
+      list-style: none; }
+      div#terminal div#terminal-inner ul.source-code li:before {
+        content: "> "; }
+    div#terminal div#terminal-inner p#copyright {
+      text-align: center; }
+
+body {
+  background-color: #121212; }
+  body section {
+    padding: 100px 20px;
+    border-bottom: 6px dashed #1c1c1c; }
+    body section:last-of-type {
+      border: none; }
+
+button {
+  background-color: transparent;
+  color: #f57842;
+  border: 1px dashed #f57842;
+  padding: 14px 80px 10px; }
+  button:hover {
+    background-color: rgba(245, 120, 66, 0.8);
+    color: white;
+    border: 1px dashed white; }
+  button.solid {
+    background-color: #f57842;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px; }
+
+/*# sourceMappingURL=global.css.map */

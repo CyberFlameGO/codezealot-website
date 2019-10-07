@@ -1,0 +1,60 @@
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: $menuOverlay;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 0.5s;
+  //border-top: 8px solid $orange;
+  //border-bottom: 8px solid $orange;
+}
+
+.overlay-content {
+  position: relative;
+  top: 5%;
+  display: table;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 2em;
+  color: $orange;
+  display: block;
+  letter-spacing: 2px;
+  &:hover{
+    text-decoration: underline;
+  }
+  &.closebtn{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 37px;
+  right: 0px;
+  font-size: 2.5em;
+  border: none;
+  color: $orange;
+  background-color: transparent;
+}
+
+button.show-menu{
+  float: right;
+  margin: 37px 0px 0px;
+  font-size: 2.5em;
+  border: none;
+  color: $orange;
+  background-color: transparent;
+  @include breakpoint(desktop){ 
+  }
+}

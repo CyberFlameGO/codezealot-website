@@ -1,0 +1,207 @@
+body.page-home{
+  div.hero{
+  	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero/laptop-3.jpg") no-repeat center -100px/100% auto;
+  	min-height: 100vh;
+  	div.text{
+  		width: 100%;
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		padding: 40px;
+  		h1,h2{
+	  		color: $white;
+	  		text-align: center;
+	  	}
+	  	h1{
+	  		font-size: 3em;
+	  		margin: 0px 0px 10px 0px;
+	  	}
+	  	h2{	  		
+	  		font-size: 2em;
+	  		margin: 0;
+	  	}
+  	}
+  }
+  section{
+  	&#skill-set{
+  		h2{
+  			text-align: center;
+  		}
+			div.skill-wrap{
+  			max-width: 900px;
+  			margin: 0 auto;
+  			div.row{
+  				margin: 40px 0px;
+	  			div.skill{
+	  				i{
+	  					color: $base-text;
+	  					width: 50%;
+	  					padding: 40px;
+	  					font-size: 5em;
+	  					margin: 0px auto;
+		  				text-align: center;
+		  				border: 1px solid $dark;
+		  				background-color: $darkTheme2;
+		  				border-radius: 14px;
+			  			&:hover{
+			  				background-color: $dark;
+			  				color: $light;
+			  				cursor: pointer;
+			  				border: 1px dashed $light;
+			  			}
+			  			span.exp{
+								display: none;
+								font-size: 0.5em;
+								font-weight: 400; //fa-database requires bold to display
+								font-family: "UbuntuMono-Regular", Monospace;
+				  		}
+			  		}
+			  		&:hover{
+			  			i{
+			  				&:before{
+			  					display: none;
+			  				}
+			  				span.exp{
+				  				display: block;
+				  			}
+			  			}
+			  		}
+  				}
+	  		}
+  		}
+  	}
+  	&#projects{
+  		background-color: lighten($darkTheme1,0.5%);
+  		div.projects-loop{
+  			margin: 0 auto;
+  			max-width: 1640px;
+  			div.each-project{
+  				//box-shadow: 0px 3px 4px rgba(black,0.6);
+  				background-color: white;
+  				border: 1px solid $border;
+  				div.top{
+  					color: white;
+  					background-color: $dark;
+  					padding: 20px 20px;
+  					margin-bottom: 20px;
+  					h1{
+	  					//text-align: center;
+	  					margin: 0;
+	  				}
+	  				p.project-tags{
+	  					//display: table;
+	  					margin: 0;
+	  					a{
+	  						color: white;
+	  						//text-decoration: underline;
+	  					}
+	  				}
+  				}
+  				div.left,div.right{
+  					background-color: transparent;
+  				}
+  				div.left{
+  					margin: 20px 0px;
+  					img{
+	  					width: 280px;
+	  					height: auto;
+	  					display: block;
+	  					margin: 0px auto;
+	  				}
+  				}
+	  			div.right{
+	  				h2{
+							margin: 0;
+	  				}
+	  				ul{
+	  					margin: 0px auto 20px;
+	  				}
+
+	  			}
+  				div.button-wrapper{
+  					padding: 20px 0px;
+  					background-color: $darkest;
+  					font-family: UbuntuMono-Regular;
+						button{
+							width: 80%;
+							margin: 0px auto;
+							display: block;
+							font-size: 1.4em;
+							a{
+								color: white;
+								&:hover{
+									text-decoration: none;
+								}
+							}
+  					}
+  				}
+  			}
+  		}
+  	}
+  	&#contact{
+  		.source-code{
+  			font-size: 1.3em;
+  		}
+  		div.wpcf7{
+  			form{
+  				font-size: 1.3em;
+  				padding: 20px;
+  				div.grid{
+  					margin-bottom: 20px;
+  				}
+  				p{
+  				}
+	  			input,textarea{
+	  				background-color: $darkTheme2;
+	  				border: none;
+	  				border-radius: 10px;
+	  				padding: 10px;
+	  				box-shadow: inset 0px 0px 4px 1px $darkTheme1;
+	  				display: block;
+	  				margin: 0 auto;
+	  			}
+	  			input{
+	  				width: 93%;;
+	  			}
+	  			textarea{
+	  				width: 96.5%;
+	  				resize: none;
+	  			}
+	  			span{
+						&.first-name,&.last-name,&.phone,&.email{
+							width: 49%;
+							float: left;
+							margin-right: 14px;
+		  			}
+		  			&.last-name,&.phone{
+		  				margin-right: 0px;
+		  			}
+		  			&.message{
+		  				margin: 0px;
+		  			}
+		  			&.phone,&.email{
+		  				
+		  			}
+		  			&.ajax-loader{
+		  				display: none;
+		  			}
+	  			}
+	  			input{
+	  				&.wpcf7-submit{
+		  				background-color: darken(#300A24,5.5%);
+						  color: $light;
+						  padding: 14px 80px 18px;
+						  box-shadow: none;
+						  width: 99%;
+							&:hover{
+						    background-color: darken(#300A24,6.5%);
+						    color: white;
+						  }
+		  			}
+		  		}
+	  		}
+  		}
+  	}
+  }
+}

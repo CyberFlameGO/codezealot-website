@@ -1,0 +1,52 @@
+body.page-minecraft{
+  div.hero{
+  	//background-image: url("../images/hero/laptop-1.jpg");
+  	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero/minecraft-hero.png") no-repeat center -100px/100% auto;
+  	min-height: 100vh;
+  	//position: relative; for centering of h1 below
+    div.text{
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1,h2{
+        color: $white;
+        text-align: center;
+      }
+      h1{
+        font-size: 3em;
+        margin: 0px 0px 10px 0px;
+      }
+      h2{       
+        font-size: 2em;
+        margin: 0;
+      }
+    }
+  }
+  section{
+    &#videos{
+      div.video-wrapper{
+        max-width: 1300px;
+        margin: 0 auto;
+        color: $light;
+        div.epyt-gallery{
+
+        }
+        div.epyt-gallery-list{
+          width: 80%;
+          margin: 60px auto;
+        }
+      }
+    }
+    &#discord{
+      div.discord-widget{
+        max-width: 1300px;
+        margin: 0 auto;
+        iframe{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

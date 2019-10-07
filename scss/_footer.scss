@@ -1,0 +1,31 @@
+footer{
+	font-size: 1.3em;
+  //background: linear-gradient(45deg, lighten($footer,25%) 0%,darken($footer,5%) 100%);
+  background-color: $darkTheme2;
+  padding: 20px;
+  small{
+  	display: table;
+  	margin: 40px auto 0px;
+  }
+  ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0 auto;
+    display: table; 
+    li{
+      display: inline-block;
+      margin-right: 20px;
+      a{
+        color: $light;
+        text-decoration: none;
+        font-size: 0.8em;
+        &:hover{
+          color: lighten($light,25%);;
+        }
+        i{
+        	padding-right: 8px;
+        }
+      }
+    }
+  }
+}

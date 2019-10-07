@@ -1,0 +1,175 @@
+//RWD Break Points -- Mobile First
+$min-breakpoint: 480px;
+$mobile-breakpoint: 620px;
+$tablet-breakpoint: 820px;
+$desktop-breakpoint: 1240px;
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (max-width: $desktop-breakpoint) { @content; }
+  }
+  @else if $point == tablet {
+    @media (max-width: $tablet-breakpoint) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: $mobile-breakpoint)  { @content; }
+  }
+}
+
+//font colors
+$base-text: #554F4B;
+$button-text: #46565D;
+$button-border: #F9E7C5;
+$button-bg: #F5E3BF;
+//$lighter-text: #797979;
+//$darker-text: #393531;
+$link: #4776BE;
+//$gold: #95793A;
+$nav-line: rgba(white,0.31);
+$underline: #FF9900;
+//$tan-offset: #EDECE5;
+//$orange: #FF9900;
+//$offset-color: #FBFBF8;
+$border: #979797;
+
+$theme-blue: #15223C;
+
+//Clearfix
+.clear:after,.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+//Grid
+.grid-1{
+  width: 100%;
+}
+//grid sizes
+.grid-2-3 {
+  width: 66%;
+  float: left;
+
+}
+.grid-1-2 {
+  width: 50%;
+  float: left;
+
+}
+
+.grid-1-3 {
+  width: 33%;
+  float: left;
+
+}
+
+.grid-1-4{
+  width: 25%;
+  float: left;
+}
+
+.grid-3-4{
+  width: 75%;
+  float: left;
+}
+
+.grid-1-6{
+  width: 16.5%;
+  float: left;
+
+}
+
+.grid-4-5{
+  width: 80%;
+  float: left;
+}
+.grid-1-5{
+  width: 20%;
+  float: left; 
+}
+
+// current state of small caps (Fall, 2015):
+// -most browsers fail at font-variant:small-caps (Chrome 46, Safari 9), using fake small caps
+// -see this: http://www.chriskrycho.com/2015/css-fallback-for-opentype-small-caps.html
+// -fix: standalone SC font (>IE 5.5), http://freakfonts.com/fonts/goudy-oldstyle-ssi-small-caps--font-download.html
+// -regular font file (OFLGoudyStM.woff) still has complete subset (for future use)
+.smallcaps {
+  font-family: "SortsMillGoudy-SC", "SortsMillGoudy", serif;
+  letter-spacing: 0.5px;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.double-line-heading{
+  position:relative;
+  text-align: center;
+  background-color: white; 
+  z-index: 2; 
+  &.main{
+    max-width: 800px; 
+    font-size: 2em;
+    margin: 0px auto 40px auto;
+  }
+  &.sub{
+    max-width: 520px;
+    margin: 20px auto 16px;
+    font-size: 1.5em; 
+    letter-spacing: 2px;
+  }
+  &:before {
+    content: "";
+    display: block;
+    border-top: solid 1px $border;
+    border-bottom: solid 1px $border;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 40%;
+    z-index: 0;
+  }
+  span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+
+
+//wp post styles
+.wp-block-file{
+  display: table;
+  margin: 0 auto;
+  a{
+    color: $link;
+  }
+}
+
+
+
+
+
+
+//Font-Stacks
+@font-face {
+  font-family: 'SortsMillGoudy';
+  src: url('../fonts/OFLGoudyStM.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/OFLGoudyStM.otf')  format('opentype'); /* Compatibility */
+  font-style: normal;
+}
+// see description in _bits on current state of small caps
+@font-face {
+  font-family: 'SortsMillGoudy-SC';
+  src: url('../fonts/Goudy_OldStyle_SSi_Small_Caps_.ttf')  format('truetype'); 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SortsMillGoudy';
+  src: url('../fonts/OFLGoudyStM-Italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/OFLGoudyStM-Italic.otf')  format('opentype'); /* Compatibility */
+  font-style: italic;
+}
+

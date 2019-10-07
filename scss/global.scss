@@ -1,0 +1,50 @@
+//init and global style includes
+//@import "compass/css3";
+@import "normalize";
+@import "colors";
+@import "typography";
+@import "header";
+@import "footer";
+@import "responsive-breakpoints";
+@import "grids";
+
+
+//page style includes
+@import "home";
+@import "minecraft";
+@import "single-projects";
+
+//widgets
+@import "terminal-window";
+
+
+//global styles
+body{
+  background-color: $darkTheme1;
+  section{
+  	padding: 100px 20px;
+  	border-bottom: 6px dashed $darkTheme2;
+  	&:last-of-type{
+  		border: none;
+  	}
+  }
+}
+
+button{
+	background-color: transparent;
+  color: $light;
+  border: 1px dashed $light;
+  padding: 14px 80px 10px;
+	&:hover{
+    background-color: rgba($light,0.8);
+    color: white;
+    border: 1px dashed white;
+  }
+	&.solid{
+		background-color: $light;
+		color: white;
+		border: none;
+		border-radius: 8px;
+		padding: 8px 20px;
+   }
+}
