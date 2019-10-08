@@ -1,8 +1,8 @@
 //RWD Break Points -- Mobile First
 $min-breakpoint: 480px;
-$mobile-breakpoint: 620px;
-$tablet-breakpoint: 820px;
-$desktop-breakpoint: 1240px;
+$mobile-breakpoint: 780px;
+$tablet-breakpoint: 900px;
+$desktop-breakpoint: 1400px;
 @mixin breakpoint($point) {
   @if $point == desktop {
     @media (max-width: $desktop-breakpoint) { @content; }

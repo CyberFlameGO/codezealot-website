@@ -418,11 +418,22 @@ p {
     content: "> "; }
 
 header {
-  background-color: rgba(47, 72, 97, 0.7);
-  padding: 12px 0px 12px 0px;
-  width: 100%;
-  position: absolute;
-  top: 0px; }
+  background: linear-gradient(45deg, #304963, 0%, #2f4861 100%);
+  padding: 12px 0px 12px 0px; }
+  header button.show-menu {
+    display: none;
+    padding: 0px;
+    margin: 22px 40px 0px;
+    border: none;
+    font-size: 2.6em;
+    float: right; }
+    header button.show-menu:hover {
+      border: none;
+      background-color: transparent;
+      color: #fbcebb; }
+    @media (max-width: 1400px) {
+      header button.show-menu {
+        display: block; } }
   header a.logo {
     display: inline-block;
     margin-left: 20px; }
@@ -430,9 +441,12 @@ header {
       width: 300px; }
   header nav {
     float: right; }
+    @media (max-width: 1400px) {
+      header nav {
+        display: none; } }
     header nav ul {
       list-style: none;
-      padding: 20px 20px 0px 0px;
+      padding: 36px 20px 0px 0px;
       margin: 0; }
       header nav ul li {
         display: inline-block;
@@ -451,7 +465,7 @@ header {
 
 footer {
   font-size: 1.3em;
-  background-color: #1c1c1c;
+  background: linear-gradient(45deg, #1d1d1d, 0%, #1c1c1c 100%);
   padding: 20px; }
   footer small {
     display: table;
@@ -513,25 +527,6 @@ footer {
   width: 20%;
   float: left; }
 
-body.page-home div.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero/laptop-3.jpg") no-repeat center -100px/100% auto;
-  min-height: 100vh; }
-  body.page-home div.hero div.text {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 40px; }
-    body.page-home div.hero div.text h1, body.page-home div.hero div.text h2 {
-      color: white;
-      text-align: center; }
-    body.page-home div.hero div.text h1 {
-      font-size: 3em;
-      margin: 0px 0px 10px 0px; }
-    body.page-home div.hero div.text h2 {
-      font-size: 2em;
-      margin: 0; }
 body.page-home section#skill-set h2 {
   text-align: center; }
 body.page-home section#skill-set div.skill-wrap {
@@ -539,6 +534,9 @@ body.page-home section#skill-set div.skill-wrap {
   margin: 0 auto; }
   body.page-home section#skill-set div.skill-wrap div.row {
     margin: 40px 0px; }
+    @media (max-width: 780px) {
+      body.page-home section#skill-set div.skill-wrap div.row div.skill {
+        width: 49%; } }
     body.page-home section#skill-set div.skill-wrap div.row div.skill i {
       color: #eaeaea;
       width: 50%;
@@ -548,12 +546,13 @@ body.page-home section#skill-set div.skill-wrap {
       text-align: center;
       border: 1px solid #2f4861;
       background-color: #1c1c1c;
-      border-radius: 14px; }
+      border-radius: 14px;
+      display: block; }
       body.page-home section#skill-set div.skill-wrap div.row div.skill i:hover {
         background-color: #2f4861;
         color: #f57842;
-        cursor: pointer;
-        border: 1px dashed #f57842; }
+        border: 1px dashed #f57842;
+        cursor: default; }
       body.page-home section#skill-set div.skill-wrap div.row div.skill i span.exp {
         display: none;
         font-size: 0.5em;
@@ -567,7 +566,7 @@ body.page-home section#projects {
   background-color: #131313; }
   body.page-home section#projects div.projects-loop {
     margin: 0 auto;
-    max-width: 1640px; }
+    max-width: 90%; }
     body.page-home section#projects div.projects-loop div.each-project {
       background-color: white;
       border: 1px solid #979797; }
@@ -679,29 +678,26 @@ body.page-minecraft section#discord div.discord-widget {
   body.page-minecraft section#discord div.discord-widget iframe {
     width: 100%; }
 
-body.single-projects div.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero/laptop-5.jpg") no-repeat center -100px/100% auto;
-  min-height: 100vh; }
-  body.single-projects div.hero div.text {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    body.single-projects div.hero div.text h1, body.single-projects div.hero div.text h2 {
-      color: white;
-      text-align: center; }
-    body.single-projects div.hero div.text h1 {
-      font-size: 3em;
-      margin: 0px 0px 10px 0px; }
-    body.single-projects div.hero div.text h2 {
-      font-size: 2em;
-      margin: 0; }
-  body.single-projects div.hero a.hero-button {
-    display: table;
-    margin: 30px auto 0px; }
-    body.single-projects div.hero a.hero-button button i {
-      display: block; }
+body.single-projects div.hero div.text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  body.single-projects div.hero div.text h1, body.single-projects div.hero div.text h2 {
+    color: white;
+    text-align: center; }
+  body.single-projects div.hero div.text h1 {
+    font-size: 3em;
+    margin: 0px 0px 10px 0px; }
+  body.single-projects div.hero div.text h2 {
+    font-size: 2em;
+    margin: 0; }
+body.single-projects div.hero a.hero-button {
+  display: table;
+  margin: 30px auto 0px; }
+  body.single-projects div.hero a.hero-button button i {
+    display: block; }
 body.single-projects main section#project div.grid {
   background-color: #1c1c1c;
   width: 90%;
@@ -786,6 +782,86 @@ div#terminal {
 
 body {
   background-color: #121212; }
+  body .overlay {
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #121212;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 0.5s; }
+    body .overlay .closebtn {
+      position: absolute;
+      text-decoration: none;
+      top: 34px;
+      right: 40px;
+      font-size: 2.6em;
+      color: #f57842; }
+      body .overlay .closebtn:hover {
+        color: #fbcebb;
+        text-decoration: none; }
+    body .overlay .overlay-content {
+      position: relative;
+      top: 0;
+      display: table;
+      text-align: center;
+      margin: 0px auto; }
+      body .overlay .overlay-content ul {
+        padding: 0px;
+        margin: 0px; }
+        body .overlay .overlay-content ul li {
+          list-style: none;
+          text-align: left; }
+          body .overlay .overlay-content ul li a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 2em;
+            color: #f57842;
+            display: block; }
+            body .overlay .overlay-content ul li a:hover {
+              text-decoration: underline; }
+            body .overlay .overlay-content ul li a i {
+              margin-right: 20px; }
+        body .overlay .overlay-content ul span {
+          display: none; }
+  body div.hero {
+    position: relative; }
+    body div.hero img {
+      width: 100%;
+      height: auto;
+      display: block; }
+      body div.hero img:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
+    body div.hero div.hero-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7); }
+      body div.hero div.hero-overlay div.text {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        body div.hero div.hero-overlay div.text h1, body div.hero div.hero-overlay div.text h2 {
+          color: white;
+          text-align: center; }
+        body div.hero div.hero-overlay div.text h1 {
+          font-size: 3em;
+          margin: 0px 0px 10px 0px; }
+        body div.hero div.hero-overlay div.text h2 {
+          font-size: 2em;
+          margin: 0; }
   body section {
     padding: 100px 20px;
     border-bottom: 6px dashed #1c1c1c; }

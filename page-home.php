@@ -6,9 +6,12 @@ Template Name: Home Page
 
 <?php get_header(); ?>
 <div class="hero">
-	<div class="text">
-		<h1>Inspiring {Z}eal around the world for all things code.</h1>
-	  <h2>// Front-End Developer || Content Creator \\</h2>
+	<img src="/wp-content/themes/cz-blog-v1/images/hero/laptop-3.jpg" />
+	<div class="hero-overlay">
+		<div class="text">
+			<h1>Inspiring {Z}eal around the world for all things code.</h1>
+		  <h2>// Front-End Developer || Content Creator \\</h2>
+		</div>
 	</div>
 </div>
 <main>

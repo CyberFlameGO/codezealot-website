@@ -1,7 +1,8 @@
 footer{
 	font-size: 1.3em;
   //background: linear-gradient(45deg, lighten($footer,25%) 0%,darken($footer,5%) 100%);
-  background-color: $darkTheme2;
+  //background-color: $darkTheme2;
+  background: linear-gradient(45deg, lighten($darkTheme2,0.5%), 0%, $darkTheme2 100%);
   padding: 20px;
   small{
   	display: table;

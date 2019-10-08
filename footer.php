@@ -1,12 +1,12 @@
     <footer>
       <ul>
-        <li><a href="#" class="social-item"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
-        <li><a href="#" class="social-item"><i class="fab fa-angellist"></i>Angel List</a></li>
-        <li><a href="#" class="social-item"><i class="fab fa-youtube"></i>YouTube</a></li>
-        <li><a href="#" class="social-item"><i class="fab fa-discord"></i>Discord</a></li>
-        <li><a href="#" class="social-item"><i class="fab fa-facebook-square"></i>Facebook</a></li>
-        <li><a href="#" class="social-item"><i class="fab fa-instagram"></i>Instagram</a></li>
-        <li><a href="#" class="social-item"><i class="fab fa-twitter-square"></i>Twitter</a></li>
+        <li><a href="https://linkedin.com/in/tyler-phass/" class="social-item"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        <li><a href="https://angel.co/code_zealot" class="social-item"><i class="fab fa-angellist"></i>Angel List</a></li>
+        <li><a href="https://youtube.com/c/CodeZealot" class="social-item"><i class="fab fa-youtube"></i>YouTube</a></li>
+        <li><a href="https://discord.gg/tPpsTDh" class="social-item"><i class="fab fa-discord"></i>Discord</a></li>
+        <li><a href="https://www.facebook.com/CodeZealotTutorials/" class="social-item"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+        <!--<li><a href="#" class="social-item"><i class="fab fa-instagram"></i>Instagram</a></li>-->
+        <li><a href="https://twitter.com/CodeZealotTuts" class="social-item"><i class="fab fa-twitter-square"></i>Twitter</a></li>
       </ul>
       <small>© Code_Zealot 2019</small>
     </footer>
@@ -20,21 +20,11 @@
     //mobile menu
     var $ = jQuery.noConflict();
     function openMenu() {
-      //document.getElementById("mobile-menu").style.height = "100%";
-      $("#mobile-menu").css("height", "98%"); //less than 100% to show border-bottom
-      $("#mobile-menu").css("border-top", "8px solid #FF884D");
-      $("#mobile-menu").css("border-bottom", "8px solid #FF884D");
-      //document.getElementById("mobile-menu").style.border-top = "8px solid $orange";
-      //document.getElementById("mobile-menu").style.border-bottom = "8px solid $orange";
+      $("#mobile-menu").css("height", "100%");
     }
 
     function closeMenu() {
-      //document.getElementById("mobile-menu").style.height = "0%";
-      //document.getElementById("mobile-menu").style.border-top = "0px solid $orange";
-      //document.getElementById("mobile-menu").style.border-bottom = "0px solid $orange";
       $("#mobile-menu").css("height", "0%");
-      $("#mobile-menu").css("border-top", "0px solid #FF884D");
-      $("#mobile-menu").css("border-bottom", "0px solid #FF884D");
     }
 	</script>
 

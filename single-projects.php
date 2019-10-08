@@ -1,12 +1,15 @@
 <?php get_header(); ?>
 
 <div class="hero">
-  <div class="text">
-    <h1>Project Information</h1>
-    <h2>// <?php the_title() ;?> \\</h2>
-    <a class="hero-button" href="#project">
-      <button>View Info<i class="fas fa-angle-double-down"></i></button>
-    </a>
+  <img src="/wp-content/themes/cz-blog-v1/images/hero/laptop-5.jpg" />
+  <div class="hero-overlay">
+    <div class="text">
+      <h1>Project Information</h1>
+      <h2>// <?php the_title() ;?> \\</h2>
+      <a class="hero-button" href="#project">
+        <button>View Info<i class="fas fa-angle-double-down"></i></button>
+      </a>
+    </div>
   </div>
 </div>
 <main> 
