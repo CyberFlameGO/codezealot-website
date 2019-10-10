@@ -13,7 +13,7 @@ header{
       background-color: transparent;
       color: lighten($light,25%);
     }
-    @include breakpoint(desktop){
+    @include breakpoint(desktopSmall){
       display: block;
     }
   }
@@ -26,7 +26,7 @@ header{
   }
 	nav{
     float: right;
-    @include breakpoint(desktop){
+    @include breakpoint(desktopSmall){
       display: none;
     }
     ul{

@@ -21,8 +21,10 @@
 //global styles
 body{
   background-color: $darkTheme1;
+  min-width: $minBP;
   .overlay {
     width: 100%;
+    min-width: $minBP;
     height: 0%;
     position: fixed;
     z-index: 3;
@@ -111,10 +113,31 @@ body{
         h1{
           font-size: 3em;
           margin: 0px 0px 10px 0px;
+          @include breakpoint(tabletSmall){
+            font-size: 2em;
+          }
+          @include breakpoint(mobile){
+            font-size: 1.7em;
+          }
         }
         h2{       
           font-size: 2em;
           margin: 0;
+          @include breakpoint(desktopLarge){
+            font-size: 1.7em;
+          }
+          @include breakpoint(tabletSmall){
+            font-size: 1em;
+          }
+        }
+        @include breakpoint(desktopLarge){
+          max-width: 960px;
+        }
+        @include breakpoint(tabletLarge){
+          max-width: 790px;
+        }
+        @include breakpoint(mobile){
+          max-width: 460px;
         }
       }
     }

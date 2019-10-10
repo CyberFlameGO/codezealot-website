@@ -1,16 +1,25 @@
 //RWD Break Points -- Mobile First
-$min-breakpoint: 480px;
-$mobile-breakpoint: 780px;
-$tablet-breakpoint: 900px;
-$desktop-breakpoint: 1400px;
+$minBP: 460px;
+$mobileBP: 560px;
+$tabletSmallBP: 990px;
+$tabletLargeBP: 990px;
+$desktopSmallBP: 1400px;
+$desktopLargeBP: 1640px;
+
 @mixin breakpoint($point) {
-  @if $point == desktop {
-    @media (max-width: $desktop-breakpoint) { @content; }
+	@if $point == desktopLarge {
+    @media (max-width: $desktopLargeBP) { @content; }
   }
-  @else if $point == tablet {
-    @media (max-width: $tablet-breakpoint) { @content; }
+  @if $point == desktopSmall {
+    @media (max-width: $desktopSmallBP) { @content; }
+  }
+  @else if $point == tabletLarge {
+    @media (max-width: $tabletLargeBP) { @content; }
+  }
+  @else if $point == tabletSmall {
+    @media (max-width: $tabletSmallBP) { @content; }
   }
   @else if $point == mobile {
-    @media (max-width: $mobile-breakpoint)  { @content; }
+    @media (max-width: $mobileBP)  { @content; }
   }
 }
