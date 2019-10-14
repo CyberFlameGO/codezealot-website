@@ -529,38 +529,37 @@ footer {
 
 body.page-home section#skill-set h2 {
   text-align: center; }
-body.page-home section#skill-set div.skill-wrap {
+body.page-home section#skill-set div.grid-container {
   max-width: 900px;
-  margin: 0 auto; }
-  body.page-home section#skill-set div.skill-wrap div.row {
-    margin: 40px 0px; }
-    @media (max-width: 560px) {
-      body.page-home section#skill-set div.skill-wrap div.row div.skill {
-        width: 49%; } }
-    body.page-home section#skill-set div.skill-wrap div.row div.skill i {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1.3rem;
+  justify-items: center; }
+  body.page-home section#skill-set div.grid-container div.grid-item {
+    width: 100%;
+    border: 1px solid #2f4861;
+    background-color: #1c1c1c;
+    border-radius: 14px; }
+    body.page-home section#skill-set div.grid-container div.grid-item:hover {
+      background-color: #2f4861;
+      color: #f57842;
+      border: 1px dashed #f57842;
+      cursor: default; }
+    body.page-home section#skill-set div.grid-container div.grid-item i {
       color: #eaeaea;
-      width: 50%;
-      padding: 40px;
       font-size: 5em;
-      margin: 0px auto;
       text-align: center;
-      border: 1px solid #2f4861;
-      background-color: #1c1c1c;
-      border-radius: 14px;
-      display: block; }
-      body.page-home section#skill-set div.skill-wrap div.row div.skill i:hover {
-        background-color: #2f4861;
-        color: #f57842;
-        border: 1px dashed #f57842;
-        cursor: default; }
-      body.page-home section#skill-set div.skill-wrap div.row div.skill i span.exp {
+      display: block;
+      padding: 30px 0px; }
+      body.page-home section#skill-set div.grid-container div.grid-item i span.exp {
         display: none;
         font-size: 0.5em;
         font-weight: 400;
         font-family: "UbuntuMono-Regular", Monospace; }
-    body.page-home section#skill-set div.skill-wrap div.row div.skill:hover i:before {
+    body.page-home section#skill-set div.grid-container div.grid-item:hover i:before {
       display: none; }
-    body.page-home section#skill-set div.skill-wrap div.row div.skill:hover i span.exp {
+    body.page-home section#skill-set div.grid-container div.grid-item:hover i span.exp {
       display: block; }
 body.page-home section#projects {
   background-color: #131313; }

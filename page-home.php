@@ -18,158 +18,174 @@ Template Name: Home Page
 
 	<section id="skill-set">
 		<h2 class="section-title">Skill Set</h2>
-		<div class="skill-wrap">
-			<div class="grid row">
-				<div class="grid-1-4 skill"><i class="fab fa-html5"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2015;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
-				<div class="grid-1-4 skill"><i class="fab fa-css3"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2015;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
-				<div class="grid-1-4 skill"><i class="fab fa-sass"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2015;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
-				<div class="grid-1-4 skill"><i class="fab fa-php"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2015;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></i></div>
+		<div class="grid-container">
+
+			<div class="skill grid-item"><i class="fab fa-html5"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2015;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
 			</div>
 
-			<div class="grid row">
-				<div class="grid-1-4 skill"><i class="fab fa-js-square"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2015;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
-				<div class="grid-1-4 skill"><i class="fab fa-react"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2018;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
-				<div class="grid-1-4 skill"><i class="fab fa-wordpress"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2015;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
-				<div class="grid-1-4 skill"><i class="fab fa-git-square"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2015;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
+			<div class="skill grid-item"><i class="fab fa-css3"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2015;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
+
+			</div>
+			<div class="skill grid-item"><i class="fab fa-sass"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2015;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
 			</div>
 
-			<div class="grid row">
-				<div class="grid-1-4 skill"><i class="fas fa-database"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2015;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
-				<div class="grid-1-4 skill"><i class="fab fa-youtube"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2017;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
-				<div class="grid-1-4 skill"><i class="fab fa-ubuntu"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2018;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
-				<div class="grid-1-4 skill"><i class="fab fa-apple"><span class="exp">
-					<?php 
-						$currentYear = date("Y");
-						$learnedYear = 2010;
-						$experience = $currentYear - $learnedYear;
-						if($experience == "1"){
-							echo "$experience Year";
-						} else {
-							echo "$experience Years";
-						}
-					?> 
-				</span></i></div>
+			<div class="skill grid-item"><i class="fab fa-php"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2015;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+				</span></i></i>
+			</div>
+
+			<div class="skill grid-item"><i class="fab fa-js-square"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2015;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
+			</div>
+
+			<div class="skill grid-item"><i class="fab fa-react"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2018;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
+			</div>
+
+			<div class="skill grid-item"><i class="fab fa-wordpress"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2015;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
+			</div>
+
+			<div class="skill grid-item"><i class="fab fa-git-square"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2015;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
+			</div>
+
+			<div class="skill grid-item"><i class="fas fa-database"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2015;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
+			</div>
+
+			<div class="skill grid-item"><i class="fab fa-youtube"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2017;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
+			</div>
+
+			<div class="skill grid-item"><i class="fab fa-ubuntu"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2018;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
+			</div>
+
+			<div class="skill grid-item"><i class="fab fa-apple"><span class="exp">
+				<?php 
+					$currentYear = date("Y");
+					$learnedYear = 2010;
+					$experience = $currentYear - $learnedYear;
+					if($experience == "1"){
+						echo "$experience Year";
+					} else {
+						echo "$experience Years";
+					}
+				?> 
+			</span></i>
 			</div>
 		</div>
 	</section>

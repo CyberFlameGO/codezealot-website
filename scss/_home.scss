@@ -4,52 +4,50 @@ body.page-home{
   		h2{
   			text-align: center;
   		}
-			div.skill-wrap{
+			div.grid-container{
   			max-width: 900px;
   			margin: 0 auto;
-  			div.row{
-  				margin: 40px 0px;
-
-	  			div.skill{
-	  				@include breakpoint(mobile){
-				      width: 49%;
-				    }
-	  				i{
-	  					color: $base-text;
-	  					width: 50%;
-	  					padding: 40px;
-	  					font-size: 5em;
-	  					margin: 0px auto;
-		  				text-align: center;
-		  				border: 1px solid $dark;
-		  				background-color: $darkTheme2;
-		  				border-radius: 14px;
-		  				display: block;;
-			  			&:hover{
-			  				background-color: $dark;
-			  				color: $light;
-			  				border: 1px dashed $light;
-			  				cursor: default;
-			  			}
-			  			span.exp{
-								display: none;
-								font-size: 0.5em;
-								font-weight: 400; //fa-database requires bold to display
-								font-family: "UbuntuMono-Regular", Monospace;
-				  		}
+  			display: grid;
+  			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  			grid-gap: 1.3rem;
+  			justify-items: center;
+  			div.grid-item{
+  				width: 100%;
+  				border: 1px solid $dark;
+  				background-color: $darkTheme2;
+  				border-radius: 14px;
+  				//padding: 1rem;
+  				&:hover{
+	  				background-color: $dark;
+	  				color: $light;
+	  				border: 1px dashed $light;
+	  				cursor: default;
+	  			}
+  				i{
+  					color: $base-text;
+  					font-size: 5em;
+  					text-align: center;
+	  				display: block;
+	  				padding: 30px 0px;
+		  			
+		  			span.exp{
+							display: none;
+							font-size: 0.5em;
+							font-weight: 400; //fa-database requires bold to display
+							font-family: "UbuntuMono-Regular", Monospace;
 			  		}
-			  		&:hover{
-			  			i{
-			  				&:before{
-			  					display: none;
-			  				}
-			  				span.exp{
-				  				display: block;
-				  			}
+		  		}
+		  		&:hover{
+		  			i{
+		  				&:before{
+		  					display: none;
+		  				}
+		  				span.exp{
+			  				display: block;
 			  			}
-			  		}
-  				}
-	  		}
+		  			}
+		  		}
+				}
   		}
   	}
   	&#projects{
