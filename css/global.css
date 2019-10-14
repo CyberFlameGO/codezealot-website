@@ -556,7 +556,9 @@ body.page-home section#skill-set div.grid-container {
         display: none;
         font-size: 0.5em;
         font-weight: 400;
-        font-family: "UbuntuMono-Regular", Monospace; }
+        font-family: "UbuntuMono-Regular", Monospace;
+        padding: 20px 0px;
+        color: #f57842; }
     body.page-home section#skill-set div.grid-container div.grid-item:hover i:before {
       display: none; }
     body.page-home section#skill-set div.grid-container div.grid-item:hover i span.exp {
@@ -608,6 +610,9 @@ body.page-home section#projects {
               text-decoration: none; }
 body.page-home section#contact .source-code {
   font-size: 1.3em; }
+  @media (max-width: 780px) {
+    body.page-home section#contact .source-code#typewriter {
+      display: none; } }
 body.page-home section#contact div.wpcf7 form {
   font-size: 1.3em;
   padding: 20px; }
@@ -626,12 +631,24 @@ body.page-home section#contact div.wpcf7 form {
   body.page-home section#contact div.wpcf7 form textarea {
     width: 96.5%;
     resize: none; }
+    @media (max-width: 780px) {
+      body.page-home section#contact div.wpcf7 form textarea {
+        width: 92.5%; } }
   body.page-home section#contact div.wpcf7 form span.first-name, body.page-home section#contact div.wpcf7 form span.last-name, body.page-home section#contact div.wpcf7 form span.phone, body.page-home section#contact div.wpcf7 form span.email {
     width: 49%;
     float: left;
     margin-right: 14px; }
+    @media (max-width: 780px) {
+      body.page-home section#contact div.wpcf7 form span.first-name, body.page-home section#contact div.wpcf7 form span.last-name, body.page-home section#contact div.wpcf7 form span.phone, body.page-home section#contact div.wpcf7 form span.email {
+        width: 100%; } }
   body.page-home section#contact div.wpcf7 form span.last-name, body.page-home section#contact div.wpcf7 form span.phone {
     margin-right: 0px; }
+    @media (max-width: 780px) {
+      body.page-home section#contact div.wpcf7 form span.last-name, body.page-home section#contact div.wpcf7 form span.phone {
+        margin-right: 0px; } }
+  @media (max-width: 780px) {
+    body.page-home section#contact div.wpcf7 form span.first-name, body.page-home section#contact div.wpcf7 form span.email {
+      margin-bottom: 20px; } }
   body.page-home section#contact div.wpcf7 form span.message {
     margin: 0px; }
   body.page-home section#contact div.wpcf7 form span.ajax-loader {
@@ -860,7 +877,7 @@ body {
         body div.hero div.hero-overlay div.text h1 {
           font-size: 3em;
           margin: 0px 0px 10px 0px; }
-          @media (max-width: 990px) {
+          @media (max-width: 780px) {
             body div.hero div.hero-overlay div.text h1 {
               font-size: 2em; } }
           @media (max-width: 560px) {
@@ -872,7 +889,7 @@ body {
           @media (max-width: 1640px) {
             body div.hero div.hero-overlay div.text h2 {
               font-size: 1.7em; } }
-          @media (max-width: 990px) {
+          @media (max-width: 780px) {
             body div.hero div.hero-overlay div.text h2 {
               font-size: 1em; } }
         @media (max-width: 1640px) {

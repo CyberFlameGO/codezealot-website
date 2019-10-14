@@ -16,7 +16,6 @@ body.page-home{
   				border: 1px solid $dark;
   				background-color: $darkTheme2;
   				border-radius: 14px;
-  				//padding: 1rem;
   				&:hover{
 	  				background-color: $dark;
 	  				color: $light;
@@ -35,6 +34,8 @@ body.page-home{
 							font-size: 0.5em;
 							font-weight: 400; //fa-database requires bold to display
 							font-family: "UbuntuMono-Regular", Monospace;
+							padding: 20px 0px;
+							color: $light;
 			  		}
 		  		}
 		  		&:hover{
@@ -117,6 +118,11 @@ body.page-home{
   	&#contact{
   		.source-code{
   			font-size: 1.3em;
+  			&#typewriter{
+  				@include breakpoint(tabletSmall){
+	          display: none;
+	        }
+  			}
   		}
   		div.wpcf7{
   			form{
@@ -137,20 +143,34 @@ body.page-home{
 	  				margin: 0 auto;
 	  			}
 	  			input{
-	  				width: 93%;;
+	  				width: 93%;
 	  			}
 	  			textarea{
 	  				width: 96.5%;
 	  				resize: none;
+	  				@include breakpoint(tabletSmall){
+	            width: 92.5%;
+	          }
 	  			}
 	  			span{
 						&.first-name,&.last-name,&.phone,&.email{
 							width: 49%;
 							float: left;
 							margin-right: 14px;
+							@include breakpoint(tabletSmall){
+		            width: 100%;
+		          }
 		  			}
 		  			&.last-name,&.phone{
 		  				margin-right: 0px;
+							@include breakpoint(tabletSmall){
+		            margin-right: 0px;
+		          }
+		  			}
+		  			&.first-name,&.email{
+		  				@include breakpoint(tabletSmall){
+		            margin-bottom: 20px;
+		          }
 		  			}
 		  			&.message{
 		  				margin: 0px;
